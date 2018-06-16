@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pals Network</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/fontawesome-all.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+            </div>
+            <ul class="list-unstyled components">
+                <p>Black Beauty</p>
+                <li >
+                    <a href="profile.html">Home</a>
+                </li>
+                <li>
+                    <a href="tutor.html">Tutor</a>
+                </li>
+                <li>
+                    <a href="coursemate.html">Course Mate</a>
+                </li>
+                <li class="active">
+                    <a href="note.html">Note</a>
+                </li>
+                <li>
+                    <a href="mentor.html">Mentors</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled CTAs">
+                <li><a href="#" data-toggle="modal" data-target="#tuModal" class="download">Become a <br>Tutor | Mentor</a></li>
+                <li><a href="books.html" class="article active">BookShop</a></li>
+            </ul>
+        </nav>
+        <!-- Page Content Holder -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="logo" href="profile.html"><img src="assets/img/logopal.png " width="50em"></a>
+                        <div class="collapse navbar-collapse search" id="bs-example-navbar-collapse-1">
+                            <input type="search" name="search" placeholder="search">
+                            <button><i class="fas fa-search"></i> </button>
+                        </div>
+                        <div class="collapse navbar-collapse icons" id="bs-example-navbar-collapse-1">
+                            <a href="" data-toggle="tooltip" title="Profile Settings"><i class="fas fa-cog"></i></i></a>
+                            <a href="" data-toggle="tooltip" title="Messages"><i class="fas fa-envelope"></i></a>
+                            <a href="" data-toggle="tooltip" title="Notification"><i class="fas fa-bell"></i></i></a></div>
+                    </div>
+                </div>
+            </nav>
+            <div class="post">
+                <div class="round">
+                    <input type="text" name="pos" placeholder="Ask your Question">
+                    <button>Post</button>
+                </div>
+            </div>
+            <div class="postlist">
+                <div class="postcon">
+                    
+                        
+                            
+                    </div>
+                </div>
+            </section>
+            <section class="modal fade " id="tuModal" tabindex="-1" role="dialog" aria-labelledby="tuModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content ">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="tuModalLabel">Become a Tutor | Mentor</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="mns">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Occupation">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Interest">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Area of Specification">
+                                </div>
+                                <small class="form-text text-muted">CURRICULUM VITAE(CV)</small>
+                                <div class="form-group">
+                                    <input type="file" class="form-control" placeholder="Curriculum Vitae">
+                                </div>
+                                <small class="form-text text-muted">PORTRAIT PICTURE</small>
+                                <div class="form-group">
+                                    <input type="file" class="form-control" placeholder="Portrait Picture">
+                                </div>
+
+                                <select class=" form-control gender">
+                                    <option>Gender</option>
+                                    <option>Male</option>
+                                    <option>Female</option>
+                                </select>
+                                <button type="submit" class="btn btn-sign">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/popper.min.js"></script>
+            <script src="assets/js/bootstrap.min.js"></script>
+            <script>
+            $(document).ready(function() {
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+            </script>
+</body>
+
+</html>
